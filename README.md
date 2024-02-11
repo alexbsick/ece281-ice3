@@ -24,3 +24,11 @@ Then it **elaborates** the *any* entity with the name `*_tb`.
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail **with** `severity failure` then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+![Completed waveform of Full Adder](ECE281ICE3Waveform.png)
+
+##Documentation
+
+For this assignment, I worked with C3C John Costello and C3C Jake Miller. We worked on how to properly assign the ports of the top_basys3 VHD file. Our waveforms were not working properly
+even though we thought the tb files were correctly written, and Jake's teacher helped us realize that we had not included the VHD files in the tb simulation folders. I also did basic Google searches for
+correct syntax of assigning signals.
