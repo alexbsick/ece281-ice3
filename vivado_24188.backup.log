@@ -1,0 +1,1188 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb 11 12:15:03 2024
+# Process ID: 24188
+# Current directory: C:/Users/Alexander.Sick/Vivado/ece281-ice3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22308 C:\Users\Alexander.Sick\Vivado\ece281-ice3\fullAdder.xpr
+# Log file: C:/Users/Alexander.Sick/Vivado/ece281-ice3/vivado.log
+# Journal file: C:/Users/Alexander.Sick/Vivado/ece281-ice3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 797.594 ; gain = 74.902
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property top top_basys3 [current_fileset]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd
+add_files -norecurse C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfAdder_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder_tb.vhd:75]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.halfadder_tb
+Built simulation snapshot halfAdder_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xsim.dir/halfAdder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 11 12:33:55 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source halfAdder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 956.293 ; gain = 6.566
+set_property top top_basys3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_ip_catalog
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/halfAdder.vhd:]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xsim.dir/top_basys3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 11 12:36:01 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 90
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 968.566 ; gain = 8.527
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 975.473 ; gain = 0.000
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 975.473 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 90
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 90
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 30 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 30 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 94
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 981.957 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] top_basys3 remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o1
+Time: 20 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:82]
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:90]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture top_basys3_arch of entity xil_defaultlib.top_basys3 [top_basys3_default]
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 145
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:82]
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:90]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture top_basys3_arch of entity xil_defaultlib.top_basys3 [top_basys3_default]
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 983.207 ; gain = 0.008
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:82]
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:90]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture top_basys3_arch of entity xil_defaultlib.top_basys3 [top_basys3_default]
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 91
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_basys3_tb_behav xil_defaultlib.top_basys3_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:82]
+WARNING: [VRFC 10-122] halfadder remains a black-box since it has no binding entity [C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd:90]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture top_basys3_arch of entity xil_defaultlib.top_basys3 [top_basys3_default]
+Compiling architecture test_bench of entity xil_defaultlib.top_basys3_tb
+Built simulation snapshot top_basys3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-ice3/fullAdder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_basys3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: bad o0
+Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd
+$finish called at time : 10 ns : File "C:/Users/Alexander.Sick/Vivado/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 91
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 11 14:20:49 2024...
