@@ -27,7 +27,7 @@ Assert statements of other severity levels will be reported, but not fail the wo
 
 ![Completed waveform of Full Adder](ECE281ICE3Waveform.png)
 
-##Documentation
+## Documentation
 
 For this assignment, I worked with C3C John Costello and C3C Jake Miller. We worked on how to properly assign the ports of the top_basys3 VHD file. Our waveforms were not working properly
 even though we thought the tb files were correctly written, and Jake's teacher helped us realize that we had not included the VHD files in the tb simulation folders. I also did basic Google searches for
