@@ -805,3 +805,7 @@ maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, c
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_UPDATE_COMMANDS
 // HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 136 MB. Current time: 2/11/24 3:00:16 PM MST
+// Elapsed time: 882 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
